@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	font-family: 'Arimo', sans-serif !important;
+}
+
+.input {
+	@apply p-2 outline-none border-2 rounded flex items-center justify-between hover:border-sky-500;
+}
+
+.primary-button {
+	@apply p-2 text-white bg-red-500 hover:bg-red-600 active:bg-red-700;
+}
+
+.secondary-button {
+	@apply p-2 text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700;
+}
