@@ -21,30 +21,32 @@ const NewItem = () => {
 		<section className="w-[80%] md:w-[60%] mx-auto mb-4">
 			<h2 className="text-xl font-bold mb-2">Create Your Todo List</h2>
 
-			<form
-				className="w-full flex justify-between items-center"
-				onSubmit={addHandler}
-			>
-				<div className="input grow">
-					<input
-						type="text"
-						className="border-none outline-none"
-						autoFocus
-						value={inputText}
-						onChange={e => setInputText(e.target.value)}
-						ref={inputRef}
-					/>
-					<button className="text-2xl">
-						<AddIcon />
-					</button>
-				</div>
+			<div className="flex">
+				<form
+					className="w-full flex justify-between items-center"
+					onSubmit={addHandler}
+				>
+					<div className="input grow">
+						<input
+							type="text"
+							className="border-none outline-none"
+							autoFocus
+							value={inputText}
+							onChange={e => setInputText(e.target.value)}
+							ref={inputRef}
+						/>
+						<button className="text-2xl">
+							<AddIcon />
+						</button>
+					</div>
+				</form>
 				<button
 					className="primary-button"
 					onClick={() => dispatch(clearAll())}
 				>
 					Clear
 				</button>
-			</form>
+			</div>
 		</section>
 	);
 };
