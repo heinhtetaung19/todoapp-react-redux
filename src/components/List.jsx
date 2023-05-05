@@ -4,7 +4,7 @@ import ListItem from './ListItem';
 const List = () => {
 	const items = useSelector(state => state.items.value);
 	return (
-		<section className="w-[80%] md:w-[60%] mx-auto">
+		<section>
 			{/* Undone list */}
 			<div className="mb-8">
 				{items

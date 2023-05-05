@@ -18,7 +18,7 @@ const NewItem = () => {
 	};
 
 	return (
-		<section className="w-[80%] md:w-[60%] mx-auto mb-4">
+		<section>
 			<h2 className="text-xl font-bold mb-2">Create Your Todo List</h2>
 
 			<div className="flex">

@@ -6,8 +6,10 @@ const Home = () => {
 	return (
 		<div>
 			<Navbar />
-			<NewItem />
-			<List />
+			<div className="w-[80%] md:w-[60%] mx-auto mb-4">
+				<NewItem />
+				<List />
+			</div>
 		</div>
 	);
 };
