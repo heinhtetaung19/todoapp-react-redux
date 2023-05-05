@@ -4,7 +4,7 @@ import Edit from './pages/Edit';
 
 const App = () => {
 	return (
-		<div>
+		<div className="min-h-screen">
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/edit/:id" element={<Edit />} />
